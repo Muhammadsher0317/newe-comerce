@@ -1,0 +1,151 @@
+.homeentrancce .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.homentrance_left {
+  width: 15%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  flex-direction: column;
+}
+.homeentrancce p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: start;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000000;
+}
+.homeentrance_right {
+  width: 85%;
+}
+.explorecards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.hlars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hlars .reds {
+  width: 20px;
+  height: 40px;
+  color: #db4444;
+  background-color: #db4444;
+}
+.hlars h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #db4444;
+}
+.exportslar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exportslar h2 {
+  padding: 20px 0px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 4%;
+}
+.exportbtns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.exportbtns button {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+}
+
+.addviewlar {
+  width: 234px;
+  height: 56px;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-right: 48px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  border: none;
+  background-color: #db4444;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arriwals {
+  height: 100vh;
+  padding: 10px 0px;
+}
+
+.exportslar_one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exportslar_one h2 {
+  padding: 20px 0px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 4%;
+}
+
+.imgcards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.imgleft {
+  width: 45%;
+}
+.imgleft img {
+  width: 100%;
+}
+.imgright {
+  width: 45%;
+  height: 575px;
+}
+.imgtop {
+  height: 50%;
+  width: 100%;
+}
+.imgtop img {
+  width: 100%;
+}
+.imgrightright {
+  height: 50%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.imgrightright img {
+  width: 48%;
+}

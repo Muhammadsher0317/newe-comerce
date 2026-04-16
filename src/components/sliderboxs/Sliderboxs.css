@@ -1,0 +1,97 @@
+.sliderboxs {
+  width: 270px;
+  height: 322px;
+  gap: 16px;
+}
+.sliderboxtop {
+  width: 270px;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sliderboxtop img {
+  width: 115px;
+  height: 160px;
+}
+.rotateplace {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: rotate(360deg);
+  color: black;
+}
+.addtocars {
+  width: 270px;
+  background-color: #000000;
+  color: white;
+  height: 30px !important;
+  margin-top: 10px;
+  height: 60px !important;
+padding: 10px 0px;
+  border: none;
+  opacity: 0;
+
+  
+}
+
+.rotetarte {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+}
+.sliderboxtop:hover .addtocars{
+  opacity: 1;
+}
+.rotetarte svg {
+  width: 24px;
+  height: 24px;
+  align-content: center;
+}
+.sliderbottom {
+  height: 40px;
+}
+.titleslar h2 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.ratingsx {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.ratingsx span {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #db4444;
+}
+.stars svg {
+  width: 20px;
+  height: 20px;
+  color: #ffad33;
+}
+.p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
