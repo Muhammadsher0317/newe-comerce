@@ -5,18 +5,22 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav>
-      <div className="container">
-        <div className="nav_top">
+      <div className="nav_top">
           <div className="rows">
-            <p> Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
-           
+            <p>
+              
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+            </p>
+
             <div className="navend">
-              <select className="selection"  name="" id="">
+              <select className="selection" name="" id="">
                 <option value="">English</option>
               </select>
             </div>
           </div>
-        </div>
+      </div>
+      <div className="container">
         <div className="nav_btomo">
           <img src="/imgs/Logo.svg" alt="" />
           <ul className="links">
@@ -30,7 +34,7 @@ function Navbar() {
               <NavLink>About</NavLink>
             </li>
             <li>
-              <NavLink>Sign Up</NavLink>
+              <NavLink to={"./signup"} >Sign Up</NavLink>
             </li>
           </ul>
           <div className="navleft">
