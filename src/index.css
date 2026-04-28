@@ -36,7 +36,6 @@ footer .container {
   letter-spacing: 3%;
 }
 
-
 .exculiveleft h2 {
   font-weight: 500;
   font-style: Medium;
@@ -139,10 +138,39 @@ footer .container {
   gap: 10px;
   padding: 10px 0px;
 }
-.foterimgright{
+.foterimgright {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 85px;
   flex-direction: column;
+}
+
+.titlewithimg {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 5px 0px;
+  gap: 10px;
+}
+.titlewithimg img {
+  width: 40px;
+  height: 40px;
+}
+.titlewithimg p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.mySwiperpkpjasd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
+  height: 700px;
+}
+.titleslar{
+margin-top: 20px;
 }

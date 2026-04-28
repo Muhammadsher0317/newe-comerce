@@ -4,12 +4,15 @@
   justify-content: space-between;
 }
 .homentrance_left {
-  width: 15%;
+  width: 17%;
   display: flex;
   align-items: start;
   justify-content: start;
+  height: 330px;
   gap: 10px;
+
   flex-direction: column;
+  border-right: 0.5px solid rgba(0, 0, 0, 1);
 }
 .homeentrancce p {
   font-weight: 400;
@@ -21,10 +24,11 @@
   color: #000000;
 }
 .homeentrance_right {
-  width: 85%;
+  width: 80%;
 }
 .explorecards {
   display: flex;
+  padding: 40px 0px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -77,12 +81,14 @@
   width: 234px;
   height: 56px;
   gap: 10px;
+  margin: 0 auto;
   opacity: 1;
   border-radius: 4px;
   padding-top: 16px;
   padding-right: 48px;
   padding-bottom: 16px;
   padding-left: 48px;
+  text-align: center;
   border: none;
   background-color: #db4444;
   font-weight: 500;
@@ -297,9 +303,8 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 0.5px solid #000000;
-  
 }
-.Todayproduct_one{
+.Todayproduct_one {
   height: 50vh;
 }
 .phones {

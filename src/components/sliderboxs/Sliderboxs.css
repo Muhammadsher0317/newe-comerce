@@ -2,6 +2,7 @@
   width: 270px;
   height: 322px;
   gap: 16px;
+  margin: 20px auto;
 }
 .sliderboxtop {
   width: 270px;
@@ -19,6 +20,26 @@
   width: 115px;
   height: 160px;
 }
+
+.sliderboxs:hover .addtocarslaar {
+  opacity: 1;
+}
+.addtocarslaar {
+  height: 51px;
+  width: 270px;
+  opacity: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  margin-top: 25px;
+}
 .rotateplace {
   position: absolute;
   top: 20px;
@@ -33,11 +54,8 @@
   height: 30px !important;
   margin-top: 10px;
   height: 60px !important;
-padding: 10px 0px;
+  padding: 10px 0px;
   border: none;
-  opacity: 0;
-
-  
 }
 
 .rotetarte {
@@ -52,7 +70,7 @@ padding: 10px 0px;
   padding: 10px 0px;
   margin-bottom: 10px;
 }
-.sliderboxtop:hover .addtocars{
+.sliderboxtop:hover .addtocars {
   opacity: 1;
 }
 .rotetarte svg {

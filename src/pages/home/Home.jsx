@@ -1,25 +1,28 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import SlidersHome from "../../components/slider/SlidersHome";
 import "./Home.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Sliderboxs from "../../components/sliderboxs/Sliderboxs";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import Flashslider from "../../components/flashslider/Flashslider";
+import { DataContext } from "../../App";
 function Home() {
+  const { categoryData } = useContext(DataContext);
+  const { productData } = useContext(DataContext);
+  const [showall, setshoeall] = useState(false);
   return (
     <>
       <div className="homeentrancce">
         <div className="container">
           <div className="homentrance_left">
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
-            <p>Woman’s Fashion</p>
+            {categoryData?.map((item, index) => {
+              return (
+                <div key={index} className="titlewithimg">
+                  <img src={item?.image} alt="" />
+                  <p>{item?.title}</p>
+                </div>
+              );
+            })}
           </div>
           <div className="homeentrance_right">
             <SlidersHome />
@@ -95,33 +98,14 @@ function Home() {
             </div>
           </div>
           <div className="categoryslar">
-            <div className="phones">
-              <img src="/imgs/phone.svg" alt="" />
-              <h2>Phones</h2>
-            </div>
-
-            <div className="phones">
-              <img src="/imgs/phone.svg" alt="" />
-              <h2>Phones</h2>
-            </div>
-
-            <div className="phones">
-              <img src="/imgs/phone.svg" alt="" />
-              <h2>Phones</h2>
-            </div>
-
-            <div className="phones">
-              <img src="/imgs/phone.svg" alt="" />
-              <h2>Phones</h2>
-            </div>
-            <div className="phones">
-              <img src="/imgs/phone.svg" alt="" />
-              <h2>Phones</h2>
-            </div>
-            <div className="phones">
-              <img src="/imgs/phone.svg" alt="" />
-              <h2>Phones</h2>
-            </div>
+            {categoryData?.map((items, index) => {
+              return (
+                <div className="phones" key={index}>
+                  <img src={items?.image} alt="" />
+                  <h2>{items?.title}</h2>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -200,16 +184,24 @@ function Home() {
             </div>
           </div>
           <div className="explorecards">
-            <Sliderboxs />
-            <Sliderboxs />
-            <Sliderboxs />
-            <Sliderboxs />
-            <Sliderboxs />
-            <Sliderboxs />
-            <Sliderboxs />
-            <Sliderboxs />
+            {(showall == true ? productData : productData?.slice(0, 8))?.map(
+              (items, index) => {
+                return <Sliderboxs key={index} items={items} />;
+              },
+            )}
           </div>
-          <button className="addviewlar">View All Products</button>
+          <button
+            onClick={() => {
+              if (showall == false) {
+                setshoeall(true);
+              } else {
+                setshoeall(false);
+              }
+            }}
+            className="addviewlar"
+          >
+            {showall ? "Hide Product" : "View all Products"}
+          </button>
         </div>
       </div>
 
@@ -245,19 +237,31 @@ function Home() {
       <div className="deliveredtaxis">
         <div className="container">
           <div className="fastdelevorerd">
-            <img  className="fastedeleiverimg" src="/imgs/icon-delivery.svg" alt="" />
+            <img
+              className="fastedeleiverimg"
+              src="/imgs/icon-delivery.svg"
+              alt=""
+            />
             <h2>FREE AND FAST DELIVERY</h2>
             <h3>Free delivery for all orders over $140</h3>
           </div>
 
-           <div className="fastdelevorerd">
-            <img  className="fastedeleiverimg" src="/imgs/icon-delivery.svg" alt="" />
+          <div className="fastdelevorerd">
+            <img
+              className="fastedeleiverimg"
+              src="/imgs/icon-delivery.svg"
+              alt=""
+            />
             <h2>FREE AND FAST DELIVERY</h2>
             <h3>Free delivery for all orders over $140</h3>
           </div>
 
-           <div className="fastdelevorerd">
-            <img  className="fastedeleiverimg" src="/imgs/icon-delivery.svg" alt="" />
+          <div className="fastdelevorerd">
+            <img
+              className="fastedeleiverimg"
+              src="/imgs/icon-delivery.svg"
+              alt=""
+            />
             <h2>FREE AND FAST DELIVERY</h2>
             <h3>Free delivery for all orders over $140</h3>
           </div>
