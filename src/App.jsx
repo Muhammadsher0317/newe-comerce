@@ -6,8 +6,10 @@ import Navbar from "./components/navbar/NAvbar";
 import Footer from "./components/footer/Footer";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
+
 import Productdetail from "./pages/productdetail/Productdetail";
 import Wishlist from "./pages/wishlist/Wishlist";
+
 import Cart from "./pages/cart/Cart";
 import Checkout from "./pages/checkout/Checkout";
 import Account from "./pages/account/Account";
@@ -17,6 +19,7 @@ export const DataContext = createContext();
 function App() {
   const [categoryData, setcategoryData] = useState();
   const [productData, setproductdata] = useState();
+  const [token, settokenslar] = useState();
   useEffect(() => {
     getcategory().then((data) => {
       setcategoryData(data);
@@ -24,11 +27,12 @@ function App() {
     getproductlist().then((item) => {
       setproductdata(item);
     });
-  }, []);
+  }, [token]);
   return (
     <>
       <BrowserRouter>
-        <DataContext.Provider value={{ categoryData, productData }}>
+        <DataContext.Provider value={{ categoryData, productData, token, settokenslar }}
+        >
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

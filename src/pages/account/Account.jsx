@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Account.css";
+import { getuserinfo } from "../../service";
 function Account() {
+  const [user, setuser] = useState(null);
+  useEffect(() => {
+    const localstoregtoken = localStorage.getItem("token");
+    if (localstoregtoken) {
+      getuserinfo(localstoregtoken).then((data) => {
+        if (data) {
+          setuser(data);
+        }
+      });
+    }
+  }, []);
+  console.log(user);
+
   return (
     <>
       <div className="acountslar">
@@ -33,22 +47,35 @@ function Account() {
               <div className="firstandlastnames">
                 <div className="firstnames">
                   <h2>First Name</h2>
-                  <input type="text" placeholder="Md" />
+                  <input
+                    defaultValue={user?.first_name}
+                    type="text"
+                    placeholder="Md"
+                  />
                 </div>
                 <div className="firstnames">
                   <h2>Last Name</h2>
-                  <input type="text" placeholder="Rimel" />
+                  <input
+                    defaultValue={user?.last_name}
+                    type="text"
+                    placeholder="Rimel"
+                  />
                 </div>
               </div>
 
               <div className="firstandlastnames">
                 <div className="firstnames">
                   <h2>Email</h2>
-                  <input type="email" placeholder="rimel1111@gmail.com" />
+                  <input
+                    defaultValue={user?.email_or_phone}
+                    type="email"
+                    placeholder="rimel1111@gmail.com"
+                  />
                 </div>
                 <div className="firstnames">
                   <h2>Address</h2>
                   <input
+                    defaultValue={user?.address}
                     type="text"
                     placeholder="Kingston, 5236, United State"
                   />

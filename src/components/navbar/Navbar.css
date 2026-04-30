@@ -111,7 +111,7 @@ nav .container {
   justify-content: space-between;
   flex-direction: column;
   color: #0000000a;
-  background: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.362) !important;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(150px);
 }

@@ -223,11 +223,27 @@ function Home() {
             </div>
             <div className="imgright">
               <div className="imgtop">
-                <img src="/imgs/Frame 685imgright.svg" alt="" />
+                <div className="imgtoptitle">
+                  <h1>Women’s Collections </h1>
+                  <p>Featured woman collections that give you another vibe.</p>
+                  <button>Shop Now</button>
+                </div>
               </div>
               <div className="imgrightright">
-                <img src="/imgs/Frame 686dslkmksmdf;klam.svg" alt="" />
-                <img src="/imgs/gucci.svg" alt="" />
+                <div className="imgright_left">
+                  <div className="imgright_left_info">
+                    <h1>Speakers</h1>
+                    <p>Amazon wireless speakers</p>
+                    <button>Shop Now</button>
+                  </div>
+                </div>
+                <div className="imgrigt_leftsecond">
+                  <div className="imgrigt_leftsecondinfo">
+                    <h1>Perfume</h1>
+                    <p>GUCCI INTENSE OUD EDP</p>
+                    <button>Shop Now</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ import { IoEyeOutline, IoStar } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { DataContext } from "../../App";
 import { baseUrl } from "../../service";
-
+import "./Cardsonce.css";
 function Cardslarone({ item }) {
   return (
     <>
@@ -18,8 +18,13 @@ function Cardslarone({ item }) {
                 <IoEyeOutline />
               </div>
             </div>
-            <img src={`${baseUrl}${item?.pictures?.[0]}`} alt="" />
 
+
+            <img
+              className="clasterimgslar"
+              src={`${baseUrl}${item?.pictures?.[0]}`}
+              alt=""
+            />
             <button className="addtocars">Add To Cart</button>
           </div>
           <div className="sliderbottom">

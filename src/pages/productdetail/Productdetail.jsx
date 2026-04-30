@@ -13,8 +13,13 @@ function Productdetail() {
   useEffect(() => {
     getproductdetail(id)?.then((item) => {
       setinfo(item);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     });
   }, [id]);
+
   return (
     <>
       <div className="descriptionitems">
@@ -28,7 +33,7 @@ function Productdetail() {
               <img src={`${baseUrl}${info?.pictures[3]?.file}`} alt="" />
             </div>
             <div className="mainimg">
-              <img src={`${baseUrl}${info?.pictures[4]?.file}`} alt="" />
+              <img src={`${baseUrl}${info?.pictures[0]?.file}`} alt="" />
             </div>
           </div>
           <div className="productdetailright">

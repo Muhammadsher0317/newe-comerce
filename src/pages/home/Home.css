@@ -183,15 +183,153 @@
 
 .imgright {
   width: 45%;
-  height: 575px;
+  height: 590px;
 }
 .imgtop {
   height: 50%;
-  width: 100%;
+  width: 100% !important;
+  background-color: red;
+  background-image: url("/imgs/womanslaclothes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
 }
-.imgtop img {
-  width: 100%;
+.imgtop .imgtoptitle {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 20px;
+  height: 150px;
 }
+.imgtoptitle h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  height: 30px;
+  color: #fafafa;
+}
+
+.imgtop .imgtoptitle p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  width: 234px;
+  margin-bottom: 10px;
+  color: #fafafa;
+}
+.imgtop .imgtoptitle button {
+  background-color: transparent;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+.imgright_left {
+  height: 90%;
+  width: 50%;
+  background-color: red;
+  background-image: url("/imgs/amazonkalonka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.imgright_left .imgright_left_info {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 20px;
+  height: 130px;
+}
+
+.imgright_left_info h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  height: 30px;
+  color: #fafafa;
+}
+
+.imgright_left_info p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  width: 234px;
+  padding: 10px 0px;
+  color: #fafafa;
+}
+
+.imgright_left_info button {
+  background-color: transparent;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+ .imgrigt_leftsecond {
+  height: 90%;
+  width: 50%;
+  background-color: red;
+  background-image: url("/imgs/gucciatirslar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.imgrigt_leftsecond .imgrigt_leftsecondinfo {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 20px 20px;
+  height: 130px;
+}
+.imgrigt_leftsecondinfo button {
+  background-color: transparent;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+.imgrigt_leftsecondinfo p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  width: 234px;
+  padding: 10px 0px;
+  color: #fafafa;
+}
+.imgrigt_leftsecondinfo h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  height: 30px;
+  color: #fafafa;
+}
+
 .imgrightright {
   height: 50%;
   display: flex;
